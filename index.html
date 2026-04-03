@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Revenda IPTV Premium</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      background: #020617;
+      padding: 20px;
+    }
+    h1 {
+      color: #38bdf8;
+    }
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px;
+      gap: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      width: 220px;
+    }
+    .price {
+      font-size: 24px;
+      margin: 10px 0;
+      color: #22c55e;
+    }
+    button {
+      background: #38bdf8;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: black;
+      font-weight: bold;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #020617;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>IPTV Premium</h1>
+  <p>Acesso imediato + Suporte 24h</p>
+</header>
+
+<section class="plans">
+
+  <div class="card">
+    <h2>Mensal</h2>
+    <div class="price">R$ 25,00</div>
+    <button onclick="comprar('Mensal')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h2>Trimestral</h2>
+    <div class="price">R$ 70,00</div>
+    <button onclick="comprar('Trimestral')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h2>6 Meses</h2>
+    <div class="price">R$ 110,00</div>
+    <button onclick="comprar('6 Meses')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h2>Anual</h2>
+    <div class="price">R$ 250,00</div>
+    <button onclick="comprar('Anual')">Comprar</button>
+  </div>
+
+</section>
+
+<section>
+  <h2>Pagamento via PIX</h2>
+  <p>Chave PIX: <strong>(11) 94692-1031</strong></p>
+  <p>Envie o comprovante após o pagamento.</p>
+</section>
+
+<footer>
+  <p>© 2026 IPTV Premium - Todos os direitos reservados</p>
+</footer>
+
+<script>
+function comprar(plano) {
+  alert("Você escolheu o plano: " + plano + 
+  "\\n\\nPara pagar via PIX use a chave: (11) 94692-1031");
+}
+</script>
+
+</body>
+</html>
